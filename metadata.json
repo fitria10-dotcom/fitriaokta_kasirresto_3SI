@@ -1,0 +1,6 @@
+{
+  "name": "RasaPOS - Kasir Makanan & Inventaris",
+  "description": "Sistem kasir toko makanan modern dengan inventaris, pembayaran QRIS, cetak struk mobile otomatis, laporan harian & bulanan, manajemen karyawan, akses offline dan sinkronisasi real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-receipt {
+  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #thermal-receipt-printable, #thermal-receipt-printable * {
+    visibility: visible;
+  }
+  #thermal-receipt-printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 58mm;
+    margin: 0;
+    padding: 2mm;
+    background: white !important;
+    color: black !important;
+  }
+  @page {
+    size: 58mm auto;
+    margin: 0;
+  }
+}
